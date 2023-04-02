@@ -190,6 +190,8 @@ providers:
     enabled: true
     allowExternalNameServices: false
     allowEmptyServices: false
+    ingressEndpoint:
+      ip: 192.18.133.69
     # ingressClass: traefik-internal
     # labelSelector: environment=production,method=traefik
     namespaces: []
@@ -699,8 +701,8 @@ service:
   loadBalancerSourceRanges: []
     # - 192.168.0.1/32
     # - 172.16.0.0/16
-  externalIPs:
-    - 192.18.133.69
+  externalIPs: []
+    # - 192.18.133.69
   ## One of SingleStack, PreferDualStack, or RequireDualStack.
   # ipFamilyPolicy: SingleStack
   ## List of IP families (e.g. IPv4 and/or IPv6).
