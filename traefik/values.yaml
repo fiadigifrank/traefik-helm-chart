@@ -134,7 +134,7 @@ experimental:
 # Create an IngressRoute for the dashboard
 ingressRoute:
   dashboard:
-    enabled: true
+    enabled: false
     # Additional ingressRoute annotations (e.g. for kubernetes.io/ingress.class)
     annotations: {}
     # Additional ingressRoute labels (e.g. for filtering IngressRoute by custom labels)
@@ -567,7 +567,7 @@ ports:
     protocol: TCP
     # Use nodeport if set. This is useful if you have configured Traefik in a
     # LoadBalancer.
-    # nodePort: 32080
+    nodePort: 33080
     # Port Redirections
     # Added in 2.2, you can make permanent redirects via entrypoints.
     # https://docs.traefik.io/routing/entrypoints/#redirection
@@ -591,7 +591,7 @@ ports:
     exposedPort: 443
     ## The port protocol (TCP/UDP)
     protocol: TCP
-    # nodePort: 32443
+    nodePort: 33443
     #
     ## Enable HTTP/3 on the entrypoint
     ## Enabling it will also enable http3 experimental feature
