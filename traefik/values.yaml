@@ -191,7 +191,8 @@ providers:
     allowExternalNameServices: false
     allowEmptyServices: false
     ingressEndpoint:
-      ip: 192.18.133.69
+      publishedService: traefik-in2/traefik-in2
+    # ip: 192.18.133.69
     # ingressClass: traefik-internal
     # labelSelector: environment=production,method=traefik
     namespaces: []
